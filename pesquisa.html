@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Imóveis - Manoel Gomes Imobiliária</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+</head>
+<body>
+<header>
+    <!-- Cabeçalho da página -->
+</header>
+
+<section class="property-search">
+    <h2>Pesquisa de Imóveis</h2>
+    <p>Encontre o imóvel perfeito para você.</p>
+
+    <form class="search-form">
+        <div class="search-input">
+            <label for="location">Localização</label>
+            <input type="text" id="location" name="location" placeholder="Digite a localização">
+        </div>
+
+        <div class="search-input">
+            <label for="property-type">Tipo de Imóvel</label>
+            <select id="property-type" name="property-type">
+                <option value="apartment">Apartamento</option>
+                <option value="house">Casa</option>
+                <option value="condo">Condomínio</option>
+                <!-- Mais opções de tipo de imóvel -->
+            </select>
+        </div>
+
+        <div class="search-input">
+            <label for="bedrooms">Quartos</label>
+            <input type="number" id="bedrooms" name="bedrooms" min="1">
+        </div>
+
+        <div class="search-input">
+            <label for="price-range">Faixa de Preço</label>
+            <input type="range" id="price-range" name="price-range" min="0" max="1000000" step="10000">
+        </div>
+
+        <button type="submit" class="cta-button">Pesquisar</button>
+    </form>
+
+    <section class="property-carousel">
+        <div class="carousel">
+            <div class="carousel-slide">
+               <a href="./compra.html"> <img src="./img/Imovel1.svg" alt="Imóvel 1"></a>
+                <div class="property-info">
+                    <h3>Imóvel 1</h3>
+                    <p>Descrição do Imóvel 1.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <a href="./compra.html"> <img src="./img/Imovel2.svg" alt="Imóvel 2"></a>
+                <div class="property-info">
+                    <h3>Imóvel 2</h3>
+                    <p>Descrição do Imóvel 2.</p>
+                </div>
+            </div>
+            <!-- Adicione mais slides de imóveis aqui -->
+        </div>
+    </section>
+    
+    
+</section>
+
+<footer>
+    <!-- Rodapé da página -->
+</footer>
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            arrows: true, // Exibir setas de navegação
+            dots: true,   // Exibir indicadores de navegação
+            autoplay: true, // Autoplay
+            autoplaySpeed: 3000, // Velocidade do autoplay (em milissegundos)
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

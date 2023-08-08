@@ -171,3 +171,219 @@ header span{
 .social-icons a:hover {
     color: #f39c12; /* Cor de destaque ao passar o mouse */
 }
+
+
+
+/* Estilos para o carrossel */
+.property-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel-slide {
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.property-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Estilos para as setas de navegação */
+.slick-prev, .slick-next {
+    font-size: 30px;
+    color: #222;
+    z-index: 1;
+}
+
+/* Estilos para os indicadores de navegação */
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.slick-dots button::before {
+    font-size: 14px;
+    color: #999;
+}
+
+
+.property-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.property-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Estilos para os botões de navegação (opcional) */
+.carousel-nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carousel-nav button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-nav button:hover {
+    background-color: #444;
+}
+
+
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos da pesquisa de imóveis */
+.property-search {
+    padding: 20px;
+    text-align: center;
+}
+
+.property-search h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.property-search p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    margin: 10px;
+    flex: 1;
+}
+
+.search-input label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.search-input input, .search-input select, .search-input button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input select {
+    appearance: none;
+    background-image: url('arrow-down.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.search-input input[type="range"] {
+    width: 100%;
+}
+
+.cta-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+
+.imgback {
+    background: url('./img/Imovel1.svg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
