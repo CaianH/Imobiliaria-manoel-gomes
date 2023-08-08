@@ -132,8 +132,29 @@ header span{
 }
 
 .footer {
-    text-align: center;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Adicione ícones de fontes incríveis para as redes sociais, por exemplo */
+.social-icons a:hover {
+    color: #f39c12; /* Cor de destaque ao passar o mouse */
 }
