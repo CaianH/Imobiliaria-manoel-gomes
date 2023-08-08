@@ -116,6 +116,11 @@ header span{
     gap: 2rem;
 }
 
+.property-cards p {
+   font-weight: 400;
+   font-size: 1rem;
+}
+
 .property-card img {
     max-width: 100%;
     height: auto;
