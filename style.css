@@ -72,6 +72,7 @@ header span{
     text-align: center;
 }
 
+
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -80,6 +81,7 @@ header span{
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 20px;
+    
 }
 
 .cta-button {
@@ -101,29 +103,40 @@ header span{
     flex-direction: column;
     margin: 32px;
     gap: 1rem;
+    
 }
 
 .property-card {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
     width: 40%;
     padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 2.767256498336792px 2.684238910675049px 0px rgba(183, 183, 183, 0.03), 0px 6.650102138519287px 6.450599193572998px 0px rgba(183, 183, 183, 0.04), 0px 12.521552085876465px 12.145905494689941px 0px rgba(183, 183, 183, 0.05), 0px 22.3363094329834px 21.66621971130371px 0px rgba(183, 183, 183, 0.07), 0px 41.777610778808594px 40.5242805480957px 0px rgba(183, 183, 183, 0.08), 0px 100px 97px 0px rgba(183, 183, 183, 0.11);
 }
 
 .property-cards {
     display: flex;
-    gap: 2rem;
+    gap: 16px;
 }
 
 .property-cards p {
    font-weight: 400;
+   align-items: flex-start;
    font-size: 1rem;
+   color: #464646;
 }
 
 .property-card img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
 }
 
 .management, .buying-process, .digital-marketing, .instant-support, .digital-process {
